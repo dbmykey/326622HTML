@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+ Sematische Tags nutzen und anordnen
+ 	header		- Kopfbereich
+	nav			- Navigation
+	main		- Hauptbereich
+	article		- Artikel
+	section		- Abteilung
+	aside		- Seitenleiste
+	footer		- Fußbereich
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Sematische Tags</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">
+		<style>
+			article, header, section, main, footer, aside, nav {
+				border:1px solid #888888;
+				padding:10px;
+				margin:5px;
+			}
+			div#hauptbereich {
+				color:#AAAAAA;
+				display:flex;
+			}
+			
+			div#hauptbereich main {
+				width:640px;
+			}
+		</style>
+    </head>
+    <body>
+    	<header>Header</header>		<!-- Kopfbereich	-->
+		<nav>Navigation</nav>		<!-- Navigationsleiste -->
+		<div id="hauptbereich">		<!--Hauptbereich start, Bereich ist per css mehrspaltig eingerichtet -->
+			<main>Hauptelemente
+				<article>			<!-- Artikelelement -->
+					Artikel
+				</article>
+				<section>			<!-- Abteilung -->
+					Abteilung
+				</section>
+			</main>					<!-- Hauptbereich endet -->
+			<aside>Seitenleiste1</aside>
+			<aside>Seitenleiste2</aside>
+		</div>
+		<footer>Fußbereich</footer>
+    </body>
+</html>
