@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Tabellen im HTML Grundgerüst aufbauen
+	tags: table, tr, td
+	Strukturierungs-tags: thead, tbody, tfoot
+	styling:
+	Tabellenzellen td, th - Rahmen, 1px dick, durchgehend, in Farbe #AAAAAA
+	Abstand zwischen Rahmen und Text soll 15px betragen.
+	Alle Texte in Tabellenzellen linksbündig
+	
+	Zellen über mehrere Spalten/Zeilen
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Tabellen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+    	<style>
+			td, th {
+				padding:15px;
+				border:1px solid #AAAAAA;
+				text-align:left;
+			}
+			td.noborder {
+				border:none;
+			}
+		
+		</style>
+	</head>
+    <body>
+		<h2>Standardtabelle</h2>
+      	<table>
+			<thead>
+				<tr>
+					<td class="noborder"></td>
+					<th>
+						Spalte 1
+					</th>
+					<th>
+						Spalte 2
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>	
+						Zeile 1
+					</th>
+					<td>	
+						Inhalt
+					</td>
+					<td>	
+						Inhalt
+					</td>
+				</tr>
+				<tr>
+					<th>	
+						Zeile 2
+					</th>
+					<td>	
+						Inhalt
+					</td>
+					<td>	
+						Inhalt mit mehr Text
+					</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+		
+		<h2>Zellen über mehrere Spalten</h2>
+		<table>
+			<thead>
+				<tr>
+					<td class="noborder"></td>
+					<th>
+						Spalte 1
+					</th>
+					<th>
+						Spalte 2
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>	
+						Zeile 1
+					</th>
+					<td colspan="2">		<!-- soll über zwei Spalten gehen -->
+						Inhalt
+					</td>
+				</tr>
+				<tr>
+					<th>	
+						Zeile 2
+					</th>
+					<td>	
+						Inhalt
+					</td>
+					<td>	
+						Inhalt
+					</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+		
+		<h2>Zelle über mehrere Zeilen</h2>
+      	<table>
+			<thead>
+				<tr>
+					<td class="noborder"></td>
+					<th>
+						Spalte 1
+					</th>
+					<th>
+						Spalte 2
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>	
+						Zeile 1
+					</th>
+					<td rowspan="2">	<!-- soll über mehrere Zeilen laufen -->
+						Inhalt
+					</td>
+					<td>	
+						Inhalt
+					</td>
+				</tr>
+				<tr>
+					<th>	
+						Zeile 2
+					</th>
+					<td>	
+						Inhalt
+					</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+		
+		<h2>Zelle über mehrere Zeilen und Spalten</h2>
+      	<table>
+			<thead>
+				<tr>
+					<td class="noborder"></td>
+					<th>
+						Spalte 1
+					</th>
+					<th>
+						Spalte 2
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>	
+						Zeile 1
+					</th>
+					<td colspan="2" rowspan="2">	
+						Inhalt
+					</td>
+					
+				</tr>
+				<tr>
+					<th>	
+						Zeile 2
+					</th>
+					
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+    </body>
+</html>
