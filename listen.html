@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+HTML-Elemente für Listen
+	unordered lists
+	list-style-type:decimal
+	list-style-type:square
+	list-style-type:circle
+	ordered lists
+	list-style-type:none
+	type:a
+	type:A
+	type:i
+	type:I
+	description lists
+	dl, dt, dd
+	etwas styling, float :left, margin-left, margin-bottom
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Listen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+    	<style>
+			ul.decimal {
+				list-style-type:decimal;
+			}
+			ul.square {
+				list-style-type:square;
+			}
+			ul.kreis {
+				list-style-type:circle;
+			}
+			ol.kreis {
+				list-style-type:none;
+			}
+			dl dt {
+				float:left;
+			}
+			dl dd {
+				margin-left:110px;
+				margin-bottom:10px;
+			}
+		</style>
+	</head>
+    <body>
+		<h2>Unordered list</h2>
+        <ul class="decimal">
+		Test
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ul>
+		<ul class="square">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ul>
+		<ul class="kreis">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ul>
+		<h2>Ordered list</h2>
+		<h3>list-style-type:none</h3>
+		<ol class="kreis">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ol>
+		<h3>type-Attribut:a</h3>
+		<ol type="a">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ol>
+		<h3>type-Attribut:A</h3>
+		<ol type="A">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ol>
+		<h3>type-Attribut:i</h3>
+		<ol type="i">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ol>
+		<h3>type-Attribut:I</h3>
+		<ol type="I">
+			<li>Listeneintrag 1</li>
+			<li>Listeneintrag 2</li>
+			<li>Listeneintrag 3</li>
+			<li>Listeneintrag</li>
+		</ol>
+		<h2>Description list</h2>
+		<dl>
+			<dt>Begriff 1</dt>
+			<dd>Erklärung zu Begriff1<br>
+				tra la la
+			</dd>
+			<dt>Begriff 2</dt>
+			<dd>Erklärung zu Begriff2<br>
+				la tra la
+			</dd>
+		</dl>
+    </body>
+</html>

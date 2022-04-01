@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Bilddateien in HTML einbinden
+Quellangabe über src-Attribute
+Textersatz-Attribut alt="" (für Screen-Reader und Suchmaschinen)
+Vorgabe von Abmessungen = Skalierung
+ohne angabe = Originalgröße
+width + height = Skalierung in beide Richtungen - kann zu Verformung führen
+width = Skalierung auf Breite, die Höhe wird automatisch nach dem Seitverhältnis berechnet
+height = Skalierung auf Höhe, die Breite wird automatisch nach dem Seitverhältnis berechnet
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Bilder im HTML</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+		
+		<img   srcset="images/butter.png 1024w, images/apfel.png 2000w">
+    </body>
+</html>

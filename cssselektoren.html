@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Einfache css-Selektoren
+	Selektoren tag + class
+	Verschiedene class Definitionen, red, green, bold, large
+	Kombinieren in verschiedener Zusammenstellung der Einzelklassen.
+	
+	Kombinationsselektoren mit kommaseparierten Listen
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Grundlage für css-Selektoren</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			bOdY {				/* hier ist Groß-/Kleinschreibung unerheblich */
+				width:640px;
+			}
+			P {
+				font-size:120%;
+			}
+			.red {				/* bei selbstvergebenen Namen ist Groß-und Kleinscchreibung wichtig */
+				color:red;
+				text-align:right;
+			}
+			p.green {
+				color:forestgreen;
+			}
+			p.bold {
+				font-weight:bold;
+			}
+			p.large {
+				font-size:130%;
+			}
+			
+			/* mehrere Selektoren werden einem Regelsatz zugeordnet */
+			.red, 
+			.green {
+				font-family:Arial, sans-serif; 
+			}
+		</style>	
+    </head>
+    <body>
+		Etwas Text
+		<h2>Standard p-Tag</h2>
+        <p>
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</p>
+		<h2>p-Tag: rot und fett</h2>
+		<p class="red bold">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</p>
+		<h2>p-Tag: grün und groß</h2>
+		<p class="green large">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</p>
+		<h2>p-Tag: fett und groß</h2>
+		<p class="bold large">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+			sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</p>
+		
+		<h2 class="red">p-Tag: eingebettet in div-Element</h2>
+		<div class="red">
+			<p>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>
+		</div>
+		
+		<!-- h2 class=Red wird nicht zugeordnet da die Klassendefinition .red heißt -->
+		<h2 class="Red">p-Tag: eingebettet in div-Element, Groß- und Kleinschreibung</h2>
+		<div class="red">
+			<p>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>
+		</div>
+    </body>
+</html>

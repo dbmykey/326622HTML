@@ -1,0 +1,26 @@
+/* 
+	CSS Document 
+	mehrere Zeilen
+*/
+
+body {
+	font-size:180%;
+}
+
+h1 {
+	font-size:30px;
+}
+
+h3#stoerer {
+	color:darkgoldenrod;
+}
+
+h3.stoerer {
+	color:darkseagreen;
+}
+
+h3 {
+	color:brown;
+}
+
+

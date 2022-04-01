@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Methoden, um css in HTML einzubinden
+	1.: externe Datei mit <link> - tag, href = Quellangabe, rel=stylesheet
+	2.: im <style> - tag, Inhalt des style tags wird als css-Regelsatz interpretiert
+	3.: im style-Attribut - Im Attributwert wird ein Regelsatz abgelegt, der ausschließlich dem HTML-Element zugeordnet ist, das das style-Attribut erhält
+-->
+<html lang="de">									<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>CSS in HTL einbinden</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">						<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>										/* innerhalb eines <style>-Tags */
+			h3#stoerer {
+				color:aqua;
+			}
+		</style>
+		<link rel="stylesheet" href="css/style.css"> <!-- import einer externen Datei -->
+    </head>
+    <body>
+        <h1>H1 Überschrift</h1>
+		<h2>H2 Überschrift</h2>
+		<h3>H3 Überschrift</h3>
+		
+		<h3>H3 Überschrift Nummer 2</h3>
+		<h3 class="stoerer">H3 Überschrift Nummer 3</h3>
+		<h3 id="stoerer" style="color:blue;font-size:40px">H3 Überschrift Nummer 4</h3> <!-- als Regelsatz im style-Attribut -->
+		
+    </body>
+</html>
