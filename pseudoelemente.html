@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+HTML änliche Elemente mit css erzeugen
+::before
+::after
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Pseudoeelemente</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<style>
+			body {
+				font-family: Arial, sans-serif;
+				font-size:120%;
+				width:640px;
+				margin:0 auto;
+			}
+			#warning {						/* Regel bezieht sich auf Boxen mit der id warning */
+				color: #7B5182;				/* Text mit Farbe #7B5182 */
+			}
+			#error {						/* Regel bezieht sich auf Boxen mit der id error */
+				color: #FF0000;				/* Text mit Farbe #FF0000 */
+			}
+			#warning, #error {				/* Regel bezieht sich auf Boxen mit der id error oder warning */
+				border-left:5px solid;		/* linker Rahmen 5px breit durchgezogene Linie, Farbe aus Textfarbe */
+				padding-left:5px;			/* Abstand zwischen Rahmen und Text and der linke Seite 5px */
+				position:relative;
+			}
+			
+			
+			#warning::before {
+				content:'Vorher';
+				color:#196426;
+				font-size:16px;
+				background-color:#DABE9C;
+				padding:3px;
+			}
+			
+			#warning::after {
+				content:url("images/apfel.png");
+				color:#196426;
+				transform:scale(0.2);
+				display:block;
+				width:32px;
+				height:32px;
+				position:absolute;
+				left:64px;
+			}
+			
+			
+			/* Universalselektor */
+			*,
+			#warning * {
+				color:#888888;
+			}
+		</style>
+	</head>
+    <body>
+      	<div id="warning">
+			Etwas Text
+			<span>mehr Text</span>
+		</div>
+		<p>
+			Etwas Text
+		</p>
+    </body>
+</html>

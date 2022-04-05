@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Das HTML-Attribut id als selektor für css-Regeln benutzen
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>CSS Regeln mit html ID verknüpfen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<style>
+			#warning {						/* Regel bezieht sich auf Boxen mit der id warning */
+				color: #7B5182;				/* Text mit Farbe #7B5182 */
+			}
+			#error {						/* Regel bezieht sich auf Boxen mit der id error */
+				color: #FF0000;				/* Text mit Farbe #FF0000 */
+			}
+			#warning, #error {				/* Regel bezieht sich auf Boxen mit der id error oder warning */
+				border-left:5px solid;		/* linker Rahmen 5px breit durchgezogene Linie, Farbe aus Textfarbe */
+				padding-left:5px;			/* Abstand zwischen Rahmen und Text and der linke Seite 5px */
+			}
+		</style>
+	</head>
+    <body>
+        <div id="warning">
+			Dies ist eine Warnung
+		</div>
+		<div id="error">
+			Dies ist ein <br>Fehler
+		</div>
+    </body>
+</html>

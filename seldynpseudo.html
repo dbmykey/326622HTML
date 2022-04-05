@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Dynamische Pseudoklasse nutzen
+:focus
+:hover
+:active
+:visited
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Dynamische Pseudoklassen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>	
+			body {
+				font-family: Arial, sans-serif;
+				font-size:120%;
+				width:640px;
+				margin:0 auto;
+			}
+			a {
+				color:#981113;
+			}
+			
+			a:hover,
+			a:visited:hover{
+				color:#4A6E94;
+				background-color:#94BECB;
+			}
+			
+			a:visited {
+				color:#D74D4F;
+			}
+			nav a {
+				display:block;
+				padding:4px;
+			}
+			
+			div.mithover {
+				padding:5px;
+				margin-top:20px;
+				border:1px solid #AAAAAA;
+			}
+			
+			div.mithover:hover {
+				background-color:#3D7693;
+				color:#FFF;
+				cursor:pointer;
+			}
+		</style>
+    </head>
+    <body>
+		<nav>
+			<a href="grundlagentags.html">Tags, Grundlagen</a>
+			<a href="semantischetags.html">Tags, semantische</a>
+			<a href="verlinkung.html">Hyperlinks</a>
+			<a href="bilder.html">Bilder</a>
+			<a href="listen.html">Listen</a>
+			<a href="tabellen.html">Tabellen</a>
+			<a href="nirgendwo.html">Nirgendwo</a>
+		</nav>
+		<div class="mithover">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+    </body>
+</html>

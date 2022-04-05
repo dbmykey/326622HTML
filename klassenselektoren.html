@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Das HTML-Attribut id als selektor für css-Regeln benutzen
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>CSS Regeln mit html ID verknüpfen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<style>
+			body {
+				width:640px;
+							
+				/*
+				margin-top:0;
+				margin-right:auto;			/* auto: browser rechnet(verteilt selbst den freien Platz) 
+				margin-bottom:0;
+				margin-left:auto;
+				*/
+				
+				margin: 0 auto;				/* das gleiche wie oben */
+			}
+			.warning {						/* Regel bezieht sich auf Boxen mit der klasse warning */
+				color: #7B5182;				/* Text mit Farbe #7B5182 */
+			}
+			.error {						/* Regel bezieht sich auf Boxen mit der klasse error */
+				color: #FF0000;				/* Text mit Farbe #FF0000 */
+			}
+			.box {							/* Regel bezieht sich auf Boxen mit der klasse box */
+				border-left:5px solid;		/* linker Rahmen 5px breit durchgezogene Linie, Farbe aus Textfarbe */
+				padding-left:5px;			/* Abstand zwischen Rahmen und Text and der linke Seite 5px */
+			}
+			.rechts {						/* Regel bezieht sich auf Boxen mit der Klasse rechts */
+				text-align:right;			/* Text rechtsbündig angeordnet */
+			}
+		</style>
+	</head>
+    <body>
+        <div class="warning box rechts">
+			Dies ist eine Warnung
+		</div>
+		<div class="error box">
+			Dies ist ein <br>Fehler
+		</div>
+		<div class="box">
+			Dies ist eine Box
+		</div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Verwendung von Pseudoklassen
+Pseudoklassen für 'ordinal' Positionen
+first-child
+last-child
+nth-child()
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Pseudoklassen opos</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+	<style>
+		body {
+			font-size:180%;
+		}
+		ul {
+			list-style-type: none;
+		}
+		li:first-child a{		/* das erste Element in Liste */
+			color:#C24A4C;
+		}
+		li:last-child a{		/* das letzte Element in Liste */
+			color:#418E2F;
+		}
+		
+		li:nth-child(2) a{		/* das zweite Element in Liste */
+			color:#2F8D8E;
+		}
+		li:nth-child(4) a{		/* das zweite Element in Liste */
+			color:#8B6520;
+		}
+		
+		li:nth-child(6) a{		/* HIER das gleiche wie last-child */
+			color:#161F1F;
+		}
+		
+	</style>
+    <body>
+		<ul>
+			<li><a href="grundlagentags.html">Tags, Grundlagen</a></li>
+			<li><a href="semantischetags.html">Tags, semantische</a></li>
+			<li><a href="verlinkung.html">Hyperlinks</a></li>
+			<li><a href="bilder.html">Bilder</a></li>
+			<li><a href="listen.html">Listen</a></li>
+			<li><a href="tabellen.html">Tabellen</a></li>
+		</ul>
+    </body>
+</html>
