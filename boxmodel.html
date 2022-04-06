@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+HTML/CSS Boxen (Rechteckige Darstellungsbereiche)
+	1: für jede Seite gesonderte CSS-Regel
+	2: Für alle Seiten umlaufend gleich, eine CSS Regel
+	3: oben, unten anders als links / rechts
+	
+	Rahmen-Eigenschaften
+	border-radius: 
+	border-bottom-left-radius:
+	
+	Geschachtelte Elemente:
+	div-Elemente die einen p-Tag enthalten
+	Verhalten von verschiedenen padding und margin Werten
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Boxmodel</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			body {
+				background-color:#CFCFCF;
+			}
+			.box {
+				width:240px;
+				height:240px;
+				
+				/*
+				Grundform: für jede Seite eine Regel
+				padding-top:10px;
+				padding-right:20px;
+				padding-bottom:30px;
+				padding-left:40px;*/
+				
+				/*shorthand für alle Seiten gleichzeitig */
+				padding:10px    20px    30px    40px;
+				/*      oben    rechts  unten   links */
+			}	
+			.box2 {
+				width:240px;
+				height:240px;
+	
+				/*shorthand für alle Seiten gleichzeitig */
+				padding:10px;
+				/*      für alle Seiten */
+			}	
+			.box3 {
+				width:240px;
+				height:240px;
+	
+				/*shorthand für alle Seiten gleichzeitig */
+				padding:10px 30px;
+				/*      vertikal 10px horizontal 30px */
+			}
+			.rahmen {	/* Klasse für elemente mit Rahmen, weißem Hintergrund und abgerundeten Ecken*/
+				/*border-width:2px;
+				border-style:solid;
+				border-color: red;*/
+				
+				border-radius:10px;
+				
+				border-bottom-left-radius:30px;
+				border:solid red 5px;
+				
+				border-left:green 5px solid; /* minimaldefinition */
+				background-color:#FFFFFF;
+			}
+			
+			.margin {
+				margin:30px 40px;
+			}
+			
+			.margincenter {		/* Zentrieren eines Elemntes in seinem Elternelement */
+				margin:30px auto 30px auto;
+			}
+			
+			.container {	/* Element das andere enthalten kann. */
+				background-color:rgba(111,176,226,0.78); /* Farbe mit 78% Opazität */
+				padding:10px;
+				margin:5px;
+			}
+			.container p {
+				margin:0;
+				padding:5px;
+				border:3px solid #C0C0C0;
+				background-color:rgba(0,0,0,0.25); /* Farbe schwarz mit 25% Opazität */
+				color:#FFFFFF;
+			}
+			
+			.moveup {
+				margin-top:-200px;	/* negative margins sind möglich, verschieben das Element u.U. über andere */
+				margin-bottom:200px; /* korrektur des negativen margin manchmal nötig um den Textfluß im Dokument zu erhalten *>
+			}
+		</style>
+    </head>
+    <body>
+		<h1>Das Box-Model im CSS</h1>
+		<div class="box rahmen">
+			<h3>Klassen:box, rahmen</h3>
+			Sie können die Überschrift und auch den Textabsatz mit CSS beliebig gestalten.
+		</div>
+		<div class="box2 margincenter">
+			<h3>Klassen: box2,margincenter</h3>
+			Sie können die Überschrift und auch den Textabsatz mit CSS beliebig gestalten.
+		</div>
+		<div class="box3 rahmen margin">
+			<h3>Klassen: box3,rahmen,margin</h3>
+			Sie können die Überschrift und auch den Textabsatz mit CSS beliebig gestalten.
+		</div>
+		<div class="container">
+			<p>Auch hier etwas Text</p>
+		</div>
+		<div class="container moveup">
+			<p>Auch hier etwas Text</p>
+		</div>
+		Abschluß des Dokumentes
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Mehrere(3) Blöcke in einer horizontalen Reihe anordnen - flexbox
+	Container erhält display:flex
+	Anteilsmässige Verteilung: flex-grow:...
+	Block 1: 25%
+	Block 2: 50%
+	Block 3: 25%
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Mehrere Blöcke nebeneinander</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			
+			.container {
+				display:flex;			/* Vorbereitet auf flex Box Darstellung */
+				width:100%;				/* über gesamte body-Breite */
+			}
+			.spalte {
+				height:200px;			
+				padding:10px 10px;			
+				border:2px solid #A52828;
+				flex-grow: 1;			/* flex-grow, erlaubter Anteil an der Gesamtbreite */
+			}
+			.spalte:nth-child(2) {		/* nur spalte 2 */
+				flex-grow:2;			/* flex-grow, erlaubter Anteil an der Gesamtbreite */
+				border-left:none;
+				border-right:none;
+			}
+			
+		</style>
+    </head>
+    <body>
+		<main>
+			<h2>Flexbox</h2>
+			<div class="container">
+				<section class="spalte">		<!-- flex-grow: 1 # (1 / Summe) = 25% -->
+					<h2>Spalte 1</h2>
+					<p>
+						Etwas Text
+					</p>
+				</section>
+				<section class="spalte">		<!-- flex-grow: 2  # (2 / Summe) = 50% -->
+					<h2>Spalte 2</h2>
+					<p>
+						Etwas Text
+					</p>
+				</section>
+				<section class="spalte">		<!-- flex-grow: 1  # (1 / Summe) = 25% -->
+					<h2>Spalte 3</h2>
+					<p>
+						Etwas Text
+					</p>
+				</section>						<!-- flex-grow: Summe aller Spalten = 4 -->
+			</div>
+		</main>
+    </body>
+</html>
