@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Body-Tag soll Hintergrund haben
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Hintergründe Innenbereich(background)</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+    </head>
+	<style>
+		body {
+			min-height:100vh;
+			background-color:rgba(175,205,235,1.00);
+			background-image:url("css/images/wolke.png");
+			background-repeat: no-repeat;
+			background-position:80% 80%;
+			background-size:50%;
+		}
+		.multicolumn section {
+			background-image:url("css/images/wolke.png");
+			background-size:60%;
+			background-repeat:no-repeat;
+			
+			padding:20px;
+			margin:20px;
+			background-color:rgba(41,104,167,0.50);
+			border-radius:20px;
+		}
+		.multicolumn section.cover {
+			background-size:cover;
+		}
+		.multicolumn section.contain {
+			background-size:contain;
+		}
+	</style>
+    <body>
+		<main class="multicolumn">
+			<section class="cover">
+			
+				Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			
+			</section>
+			<section class="contain" >
+				
+				Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section>
+				
+				Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+    </body>
+</html>

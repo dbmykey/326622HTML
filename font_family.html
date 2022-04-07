@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Externe Font-Familien einbinden
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>FONT-Family</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		
+		
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			@font-face {
+				font-family:AbrilFatface;
+				src:url('css/AbrilFatface-Regular.ttf') format('truetype');
+			}
+			@font-face {
+				font-family:Schreibschrift;
+				src:url('css/Parisienne-Regular.ttf') format('truetype');
+			}
+			
+			.multicolumn section {
+				padding:10px;
+				margin:10px;
+				border:1px solid #166C9C;
+				border-radius:10px;
+			}
+			.multicolumn section h3 {
+				font-family:Arial, sans-serif;
+				font-size:1.5rem;
+			}
+			section.lobster {
+				font-family:Lobster;
+				font-size: larger;
+			}
+			section.abril {
+				font-family:AbrilFatface;
+			}
+			section.schreibschrift {
+				font-family:Schreibschrift;
+				font-size:larger;
+			}
+		</style>
+    </head>
+    <body>
+		<h1>Schriftfamilien</h1>
+		<main class="multicolumn">
+			<section class="lobster">
+				<h3>Google-Fonts:Lobster per Direktabruf im HTML - Head</h3>
+				Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="abril">
+				<h3>Google-Fonts:AbrilFatFace Download und Einbindung ttf-Datei</h3>
+				Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="schreibschrift">
+				<h3>Internet:Parisienne Download und Einbindung ttf-Datei</h3>
+				Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+    </body>
+</html>

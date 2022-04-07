@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+CSS und Schriftarten
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Font 1</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			.formatiert {
+				color:#999;
+			}
+			.nowrap {
+				white-space:nowrap;
+			}
+			.gorgia {
+				/*font-size:1.2em;
+				line-height:150%;
+				font-weight:bold;
+				font-family:Gorgia, Times, serif;*/
+				
+				font: bold 1.2em/150% Georgia,Times,serif; /* als shorthand zusammengefasst*/
+				
+				
+				color:rgba(69,151,12,1.00);
+			}
+			.monospace {
+				/*font-size:1.2em;
+				line-height:150%;
+				font-family:Courier, monospace;*/
+				
+				font: 1.2em/150% Courier, monospace;
+				font-style: italic;
+			}
+			
+			/* font-size Beispiele */
+			.absolut {
+				font-size:48px;
+			}
+			
+			.fontsize {
+				font-size:24px;
+			}
+			.relativ {
+				font-size:1.2em;
+				font-size:120%;
+			}
+			
+			.relativ1 {
+				font-size:1.2rem;
+			}
+		</style>
+    </head>
+    <body>
+		<p class="formatiert">
+			<span class="nowrap">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 	Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 		ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 			fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 		justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+			</span>
+			Vivamus elementum semper nisi. 
+			<span class="gorgia">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. 
+			</span>
+			Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. <span class="monospace">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</span> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+		</p>
+		<p class="fontsize">
+		<span class="absolut">Lorem ipsum dolor sit amet, </span><br>
+		<span class="relativ">Lorem ipsum dolor sit amet, </span><br>
+		<span class="relativ1">Lorem ipsum dolor sit amet, </span><br>consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+		</p>
+    </body>
+</html>

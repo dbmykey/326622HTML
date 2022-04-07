@@ -1,0 +1,175 @@
+<!--Übungsdatei-->
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Float Text</title>
+        <meta name="charset" content="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/basics.css">
+        <style>
+            body > div {
+                margin-left: 25%;
+                margin-right: 25%;
+                line-height: 1.2em;
+            }
+
+            #top {
+                height: 90px;
+            }
+
+            /*Fixierte Navigation*/
+
+            nav {
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                padding: 10px 30px;
+                background-color: rgb(208, 246, 255);
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul.level1 > li {
+                position: relative;
+                display:inline-block;
+                padding: 10px 30px;
+                background-color: rgb(255, 212, 155);
+                border-radius: 6px;
+                margin-right: 30px;
+                height: 25px;
+                cursor: pointer;
+            }
+
+            ul.level1 > li:hover ul.level2 {
+                display: block;
+                
+            }
+
+            ul.level2 {
+                display: none;
+                position: absolute;
+                left: 0;
+                right: 40px;
+                top: 45px;
+                padding: 10px 30px;
+                background-color: rgb(178, 241, 178);
+                border-radius: 6px;
+            }
+
+            /*Fixiertes zurück nach oben Element unten rechts*/
+
+            #backtotop {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background-color: #fff;
+                border: 3px solid #646464;
+                border-radius: 50%;
+                padding: 20px;
+                width: 32px;
+                height: 32px;
+				margin:0;
+            }
+
+            #backtotop a {
+                display: block;
+                border: 16px solid transparent;
+                border-bottom-color: #646464 ;
+                margin-top: -10px;
+            }
+
+            #backtotop a:hover {
+                border-bottom-color: #414141;
+            }
+
+            /*Bilder*/
+
+            #pic1 {
+                background-color: #d8c946;
+                float: right;
+            }
+
+            #pic2 {
+                background-color: #d8c946;
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav>
+            <ul class="level1">
+                <li>Menüpunkt 1
+                    <ul class="level2">
+                        <li>Sub 1.1</li>
+                        <li>Sub 1.2</li>
+                        <li>Sub 1.3</li>
+                        <li>Sub 1.4</li>
+                    </ul>
+                </li>
+                <li>Menüpunkt 2
+                    <ul class="level2">
+                        <li>Sub 2.1</li>
+                        <li>Sub 2.2</li>
+                        <li>Sub 2.3</li>
+                        <li>Sub 2.4</li>
+                        <li>Sub 2.5</li>
+                        <li>Sub 2.6</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="top"></div>
+
+        <h1>Etwas Fülltext</h1>
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                  vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                  elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, 
+                  feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                  Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, 
+                  luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                  Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, 
+                  augue velit cursus nunc,
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                  vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,<div id="pic1"><img src="images/apfel.png" width="129px" height="129px"></div> venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                  elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, 
+                  feugiat a, tellus. Phasellus viverra nulla ut metus varius  laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                  Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, 
+                  luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                  Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, 
+                  augue velit cursus nunc, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                   vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                   elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, 
+                   feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                   Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, 
+                   luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                   Etiam sit amet orci eget eros faucibus tincidunt.<div id="pic2"><img src="images/apfel.png" width="129px" height="129px"></div> Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, 
+                   augue velit cursus nunc, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                   nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+                    elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, 
+                    feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                    Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, 
+                    luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. 
+                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, 
+                    augue velit cursus nunc, 
+            </div>
+
+        <div id="backtotop">
+            <a href="#top"></a>
+        </div>
+
+    </body>

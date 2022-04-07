@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Weitere CSS-Regeln zu fonts und text
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Text styling</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+    </head>
+    <body>
+		<h2>font-size, font-style, font-family</h2>
+		<style>
+			section h3 {
+				border-bottom:1px solid #AAAAAA;
+			}
+			.gross {
+				font-size:3.0em;
+			}
+			.italic {
+				font-style:italic;
+			}
+			.serif {
+				font-family:serif;
+			}
+			.mono {
+				font-family:monospace;
+			}
+		</style>
+		<section>
+			<h3>font-size:3.0em</h3>
+			<span class="gross">Lorem ipsum dolor sit amet,</span> consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+			<h3>font-style:italic</h3>
+			<span class="italic">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.)</span>
+			<h3>font-family:serif</h3>
+			<span class="serif">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </span>
+			<h3>font-family:monospace</h3>
+			<span class="mono">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui</span>
+		</section>
+		<h2>font-weight, text-shadow</h2>
+		<style>
+			.fw100 {
+				font-weight:100;
+			}
+			.fwnormal {
+				font-weight:normal;
+			}
+			.fw900 {
+				font-weight:900;
+			}
+			.bold {
+				font-weight:bold;
+			}
+			.shadow {
+				text-shadow:3px 3px 5px BLACK;
+			}
+		</style>
+		
+		
+		<section>
+			<h3>font-weight:100</h3>
+			<span class="fw100">Lorem ipsum dolor sit amet, </span>
+			<h3>font-weight:normal</h3>
+			<span class="fwnormal">consectetuer adipiscing elit.</span> 
+			<h3>font-weight:900</h3>
+			<span class="fw900">Aenean commodo ligula eget dolor. Aenean massa.</span> 
+			<h3>font-weight:bold</h3>
+			<span class="bold">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
+			<h3>text-shadow:</h3>
+			<span class="shadow">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
+		</section>
+		<h2>letter-spacing, word-spacing</h2>
+		<style>
+			.lsp {
+				letter-spacing: 5px;
+			}
+			.wsp {
+				word-spacing: 20px;
+			}
+		</style>
+		<section>
+			<h3>letter-spacing:5px</h3>
+			<span class="lsp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span> 
+			<h3>word-spacing:20px</h3>
+			<span class="wsp">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</span>
+		</section>
+		
+		<h2>text-align:left, right, center</h2>
+		<style>
+			main.threecolumn {
+				display:flex;
+				margin-left:-50px;
+				margin-right:-50px;
+				background-color: rgba(196,196,196,0.9);
+			}
+			main.threecolumn.narrow {
+				margin-left:200px;
+				margin-right:200px;
+			}
+			main.threecolumn section {
+				flex-grow:1;
+				padding:30px;
+				
+			}
+			.taright {
+				text-align:right;
+			}
+			.tacenter {
+				text-align:center;
+			}
+			.tajustify {
+				text-align:justify;
+			}
+			.thauto {
+				hyphens:auto;
+			}
+		</style>
+		
+		<main class="threecolumn">	
+			<section>	
+				<h3>text-align:left(standard)</h3>
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="taright">
+				<h3>text-align:right, hyphens:auto</h3>
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="tacenter">
+			<h3>text-align:center</h3>
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+		<h2>text-align:justify, hyphens:auto</h2>
+		<main class="threecolumn narrow">	
+			<section class="tajustify">	
+				<h3>text-align:justify</h3>
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="tajustify thauto">
+				<h3>text-align:justify + hyphens:auto</h3>
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+		<h2>line-height: vertical-align</h2>
+		<style>
+			.lhplus {
+				font-size:3em;
+				line-height:8rem;
+			}
+			.vabottom {
+				vertical-align:bottom;
+			}
+			.vamiddle {
+				vertical-align:middle;
+			}
+			.vatop {
+				vertical-align:top;
+			}
+		</style>
+		<section >
+			<h3>line-height:8rem + vertical-align:baseline(Standard)</h3>
+			<span class="lhplus">Donec quam felis,</span> ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			<h3>line-height:8rem vertical-align:bottom</h3>
+			<span class="lhplus vabottom">Donec quam felis,</span> ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			<h3>line-height:8rem + vertical-align:middle</h3>
+			<span class="lhplus vamiddle">Donec quam felis,</span> ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			<h3>line-height:8rem + vertical-align:top</h3>
+			<span class="lhplus vatop">Donec quam felis,</span> ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+		</section>
+		<h2>text-decoration:underline / line-through / overline</h2>
+		<style> 
+			.tdul {
+				text-decoration: underline;
+				text-decoration-color: red;
+				text-decoration-style: double;
+			}
+			.tdlt {
+				text-decoration:line-through;
+			}
+			.tdol {
+				text-decoration:overline;
+				text-decoration-color: green;
+			}
+		</style>
+		<section >
+			<span class="tdul">Donec quam felis,</span> ultricies nec, 
+			<span class="tdlt">pellentesque eu</span>, pretium quis, sem. 
+			<span class="tdol">Nulla consequat massa quis</span> enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+		</section>
+		<h2>text-transform:uppercase, lowercase, capitalize</h2>
+		<style> 
+			.ttUC {
+				text-transform:uppercase;
+				color:red;
+			}
+			.ttLC {
+				text-transform:lowercase;
+				color:red;
+			}
+			.ttCA {
+				text-transform:capitalize;
+				color:red;
+			}
+		</style>
+		<section >
+			<h3>uppercase</h3>
+			<span class="ttUC">Donec quam felis,</span> ultricies nec,
+			<h3>lowercase</h3>
+			<span class="ttLC">pellentesque eu</span>, pretium quis, sem. 
+			<h3>capitalize</h3>
+			<span class="ttCA">nulla consequat massa quis</span><br> enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+		</section>
+    </body>
+</html>

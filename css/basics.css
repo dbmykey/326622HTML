@@ -6,3 +6,11 @@ body {
 	max-width:1024px;
 	margin:0 auto;
 }
+
+main.multicolumn {
+	display:flex;
+}
+
+main.multicolumn section {
+	flex-grow:1;
+}
