@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Verschiedene Auswirkungen der display: Eigenschaft
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Display Eigenschaft im css</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			p {
+				background-color:rgba(236,219,194,1.00);
+				padding:10px;
+				border:2px solid #52A727;
+				border-radius:0 10px 10px 0;
+			}
+			#beispiel1 {
+				width:160px;
+				line-height:2;
+			}
+			#beispiel1 span {
+				border:2px solid #528F34;
+				border-radius:4px;
+			}
+			
+			#beispiel2 {
+				line-height:1.5;
+			}
+			#beispiel2 span span {
+			
+				font-size:70%;
+			}
+			
+			.valign-bottom {
+				vertical-align:bottom;
+			}
+			.valign-top {
+				vertical-align:top;
+			}
+			
+			.valign-middle {
+				vertical-align:middle;
+			}
+		</style>
+    </head>
+    <body>
+		<h2>1. Beispiel: Aufteilung von inline Elementen</h2>
+		<p id="beispiel1">
+			<span>Inline-Boxen können auf mehrere  Zeilen aufgeteilt werden.</span>
+		</p>
+		<p id="beispiel2">
+			<span>Inline-Boxen mit unterschiedlicher Höhe können mit <span class="valign-top">vertical-align:top</span> zueinander ausgerichtet werden.</span><br>
+			<span>Inline-Boxen mit unterschiedlicher Höhe können mit <span class="valign-middle">vertical-align:middle</span> zueinander ausgerichtet werden.</span><br>
+			<span>Inline-Boxen mit unterschiedlicher Höhe können mit <span class="valign-bottom">vertical-align:bottom</span> zueinander ausgerichtet werden.</span>
+		</p>
+    </body>
+</html>

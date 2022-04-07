@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Verschiedenen Positionierungsverfahren
+	position:static
+	position:relative
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Positionierung</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			#beispiel1 span {
+				color:#AD1A1D;	
+				
+				position:relative;
+			}
+			
+			#beispiel1 span:nth-child(1) {
+				top:-50px;
+				left:60px;
+			}
+			
+			#beispiel1 span:nth-child(2){
+				right:-100px;
+				bottom:-100px;
+			}
+			
+			.mtop100 {
+				margin-top:120px;
+			}
+			
+			
+			/* Beispiel 2: position absolute */
+			nav ul {
+				list-style-type:none;
+			}
+			nav > ul {
+				padding:0;
+			}
+			nav > ul > li {
+				display:inline-block;
+				position:relative;
+				width:150px;
+				padding:10px;
+				background-color:#D0A55D;
+				line-height:1.2em;
+				margin-right:30px;
+				border-radius:6px;
+			}
+			nav ul.sub {
+				position:absolute;
+				top:calc(1.2em + 20px);
+				left:0;
+				width:150px;
+				margin:0;
+				padding:10px;
+				background-color:#B9F35E;
+				display:none;
+				border-radius:6px;
+			}
+			nav > ul > li:hover {
+				cursor:pointer;
+			}
+			nav > ul > li:hover ul.sub {
+				display:block;
+			}
+			.tooltip {
+				color:red;
+				position:relative;
+				cursor:pointer;
+			}
+			.tooltip span {
+				display:none;
+				background-color:rgba(255,255,255,0.81);
+				box-shadow:5px 5px 5px RGBA(0,0,0, 0.5);
+				border:1px solid red;
+				border-radius:12px;
+				padding:12px;
+				position:absolute;
+			}
+			.tooltip:hover span {
+				display:block;
+				top:-50px;
+				left:-4px;
+			}
+		</style>
+    </head>
+    <body>
+		<h2>position:relative</h2>
+		<p id="beispiel1">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad minim veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non proident, </span>sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<hr class="mtop100">
+		<h2>position:absolute</h2>
+		<nav>
+			<ul>
+				<li>
+					Menu1
+					<ul class="sub">
+						<li>Submenu 1.1</li>
+						<li>Submenu 1.2</li>
+						<li>Submenu 1.3</li>
+						<li>Submenu 1.4</li>
+					</ul>
+				</li>
+				<li>
+					Menu2
+					<ul class="sub">
+						<li>Submenu 2.1</li>
+						<li>Submenu 2.2</li>
+						<li>Submenu 2.3</li>
+						<li>Submenu 2.4</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<h2>position:absolute zur Erzeugung eines tooltips</h2>
+		<p>
+		<span class="tooltip">Lorem
+			<span>
+				Tooltip
+			</span>
+		</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+    </body>
+</html>

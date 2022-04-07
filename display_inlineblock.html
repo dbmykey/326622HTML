@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+display:inline-block
+	Aufbau einere Navigationsleiste
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>display: inline_block</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			nav ul {
+				list-style-type: none;
+			}
+			nav ul li {
+				display:inline;
+				background-color:#E0C49B;
+				margin:0 5px;
+			}
+			nav ul li a {
+				display:inline-block;
+				padding:5px 10px;
+				background-color:#6D94C0;
+				color:#FFFFFF;
+				margin:0 15px;
+				text-decoration: none;
+			}
+			nav ul li a:hover {
+				background-color:#C5C8CB;
+				color:#4D596B;
+			}
+		</style>
+    </head>
+    <body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Startseite</a></li>
+				<li><a href="semantischetags.html">Tags, semantische</a></li>
+				<li><a href="verlinkung.html">Hyperlinks</a></li>
+			</ul>
+		</nav>
+    </body>
+</html>
