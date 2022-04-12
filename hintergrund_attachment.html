@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Ein hintergrundbild festhalten
+	background_attachment
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Hintergrund festhalten</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			body {
+				min-width:100%;
+				margin:0;
+			}
+			.multicolumn section {
+				margin-top:50px;
+				margin-left:50px;
+				margin-right:100px;
+			}
+			.multicolumn section div {
+				box-sizing:border-box;
+				width:167px;
+				height:300px;
+				padding:15px;
+				border:1px solid #AAAAAA;
+				background-image:url("css/images/Sonnenuntergang.jpg");
+				background-repeat:no-repeat;
+				overflow:auto;
+			}
+			.multicolumn section div p {
+				width:300px;
+			}
+			.fixed {
+				background-attachment:fixed;
+			}
+			.scroll {
+				background-attachment:scroll;
+			}
+			.local {
+				background-attachment:local;
+			}
+		</style>
+    </head>
+    <body>
+		<main class="multicolumn">
+			<section>
+				<h3>fixed</h3>
+				<div class="fixed">
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h3>scroll(standard)</h3>
+				<div class="scroll">
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h3>local</h3>
+				<div class="local">
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+				</div>
+			</section>
+		</main>
+    </body>
+</html>
