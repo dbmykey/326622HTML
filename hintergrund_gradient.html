@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Verschiedene Boxen mit Gradientenhintergrund
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Hintergrund mit Farbgradienten</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			:root {
+				--gradientblue:#125EA5;
+				--gradientlight:#DBE2F2;
+			}
+			body {
+				min-height:100vh;
+				background-color:rgba(207,207,207,1.00);
+			
+			}
+			.multicolumn section {
+				padding:20px;
+				margin:20px;
+				border:1px solid #AAAAAA;
+			}
+			.grstandard {
+				background-image:linear-gradient(var(--gradientlight), var(--gradientblue));
+			}
+			.grtoright {
+				background-image:linear-gradient(to right, var(--gradientlight), var(--gradientblue));
+			}
+			.grtoleft {
+				background-image:linear-gradient(to left, var(--gradientlight), var(--gradientblue));
+			}
+			.grtolefttop {
+				background-image:linear-gradient(to left top, var(--gradientlight), var(--gradientblue));
+			}
+			.gr4 {
+				background: rgb(2,0,36);
+				background-image: linear-gradient(68deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(162,6,45,1) 70%, rgba(0,212,255,1) 100%);
+				color:#FFFFFF;
+			}
+			.grradial {
+			background: rgb(125,10,122);
+				background: radial-gradient(circle, rgba(125,10,122,1) 0%, rgba(162,6,132,0.6612394957983193) 70%, rgba(0,255,55,1) 100%);
+			}
+		</style>
+    </head>
+    <body>
+		<main class="multicolumn">
+			<section class="grstandard">
+				Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="grtoright">
+				Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+		<main class="multicolumn">
+			<section class="grtoleft">
+				Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="grtolefttop">
+				Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+		<main class="multicolumn">
+			<section class="gr4">
+				Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+			<section class="grradial">
+				Lorem ipsum dolor sit amet,
+				consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+			</section>
+		</main>
+    </body>
+</html>

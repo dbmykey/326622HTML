@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Hintergrund aussen = border
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Hintergrund aussen - border</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			main {
+				margin-left:30px;
+				margin-right:30px;
+			}
+			main section {
+				float:left;
+				width:160px;
+				height:160px;
+				margin-right:30px;
+				margin-top:30px;
+				border:1px solid #AAAAAA;
+				box-sizing:border-box;
+				background-color:#FFD8AE;
+				text-align:center;
+				font-size:0.8em;
+				padding:5px;
+			}
+			.one {
+				border-color:red;
+				border-width:thin;
+			}
+			.two {
+				border-color:red;
+				border-width:medium;
+			}
+			.three {
+				border-color:red;
+				border-width:thick;
+			}
+			.four {
+				border-color:red;
+				border-width:10px;
+				border-style:dashed;
+			}
+			.five {
+				border-color:red;
+				border-width:10px;
+				border-style:dotted;
+			}
+			.six {
+				border-color:red;
+				border-width:10px;
+				border-style:double;
+			}
+			.seven {
+				border-color:red;
+				border-width:10px;
+				border-style:inset;
+			}
+			.eight {
+				border-color:red;
+				border-width:10px;
+				border-style:outset;
+			}
+			.nine {
+				border-color:red;
+				border-width:10px;
+				border-style:groove;
+			}
+			.ten {
+				border-color:red;
+				border-width:10px;
+				border-style:ridge;
+			}
+			.eleven {
+				border-color:red;
+				border-width:10px;
+				border-style:none;
+			}
+			.twelve {
+				border-color:red green blue yellow;
+				border-width:10px;
+				border-style:solid;
+			}
+			.thirteen {
+				border-color:red;
+				border-width:10px;
+				border-style:double;
+				border-radius:15px;
+			}
+			.fourteen {
+				border-color:red;
+				border-width:10px;
+				border-style:double;
+				border-radius:50%;
+				width:350px;
+			}
+			.fifteen {
+				border:10px red solid;
+				outline:10px solid blue;
+				box-shadow:0 0 0 10px yellow inset;
+			}
+		</style>
+    </head>
+    <body>
+		<main>
+			<section class="one">thin</section>
+			<section class="two">medium</section>
+			<section class="three">thick</section>
+			<section class="four">dashed<br>10px</section>
+			<section class="five">dotted<br>10px</section>
+			<section class="six">double<br>10px</section>
+			<section class="seven">inset<br>10px</section>
+			<section class="eight">outset<br>10px</section>
+			<section class="nine">groove<br>10px</section>
+			<section class="ten">ridge<br>10px</section>
+			<section class="eleven">none<br>10px</section>
+			<section class="twelve">bunt<br>10px</section>
+			<section class="thirteen">mit radius<br>double<br>10px</section>
+			<section class="fourteen"><br>mit radius 50%<br>double<br>10px</section>
+			<section class="fifteen">alle Aussenelemente<br>solid<br>10px</section>
+		</main>
+    </body>
+</html>

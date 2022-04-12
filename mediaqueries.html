@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Verschieden Layouts für verschiedene Abmessung
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Media Queries</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			body {
+				background-color:#BD8A3D;
+				padding:30px;
+			}
+			.adaptive {
+				display:flex;
+				gap:30px;
+				flex-wrap:wrap;
+			}
+			.adaptive section {
+				flex-grow:1;
+				background-color:RGBA(255, 255, 255, 0.5);
+				padding:1em;
+				border:2px solid #E7E7E7;
+				box-sizing:border-box;
+			}
+			.adaptive section h3 {
+				white-space: nowrap;
+			}
+			@media screen and (max-width: 768px)  {
+				body {
+					background-color:#004672;
+					color:#FFF;
+				}
+			}
+			@media screen and (max-width: 576px) {
+				body {
+					background-color:#727200;
+					color:#FFF;
+					padding:10px;
+				}
+				.adaptive section {
+					min-width:calc(100% - 20px);
+				}
+			}
+			
+		</style>
+    </head>
+    <body>
+		<main class="adaptive">
+			<section>
+				<h3>Textbox 1</h3>
+				<p>
+					Etwas Text hier.
+				</p>
+			</section>
+			<section>
+				<h3>Textbox 2</h3>
+				<p>
+					Etwas Text hier.
+				</p>
+			</section>
+			<section>
+				<h3>Textbox 3</h3>
+				<p>
+					Etwas Text hier.
+				</p>
+			</section>
+			<section>
+				<h3>Textbox 4</h3>
+				<p>
+					Etwas Text hier.
+				</p>
+			</section>
+		</main>
+		<hr>
+		<main>
+			<h3>HTML-Entities</h3>
+			&lt;img&gt;noch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etwas 'Text mit mehreren Leerzeichen'<br>
+			&micro; &Omicron; &copy;
+		</main>
+		<hr>
+    </body>
+</html>
