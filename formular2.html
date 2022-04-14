@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Nutzerinteraktion mit Formularen
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Formulare Grundlagen 2</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+    </head>
+    <body>
+		<h1>Formular - Grundlagen 2</h1>
+		<form method="POST" action="https://jscourse.bitpacker.de/html2/catch.php">
+			<h3>SELECT Element</h3>
+			<select name="Auswahlbox">
+				<option value="opt1">Option 1</option>
+				<option selected value="opt2">Option 2</option>
+				<option value="opt3">Option 3</option>
+			</select>
+			<h3>TEXTAREA Element</h3>
+			<textarea rows="5" cols="60" name="Textarea">...</textarea>
+			<h3>BUTTON submit</h3>
+			<button type="submit" name="abschicken" value="buttonsend">Submit</button>
+		</form>
+    </body>
+</html>

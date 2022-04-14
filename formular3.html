@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Nutzerinteraktion mit Formularen html5 Sondertypen für input-Felder
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Formulare Sondertypen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/jscourse.css">
+		<link rel="stylesheet" href="css/basics.css">
+		<style>
+			table.bordered {
+				width:100%;
+				marging-bottom:30px;
+			}
+			table.bordered tr td,
+			table.bordered tr th {
+				padding:10px;
+				text-align:left;
+			}
+		</style>
+    </head>
+    <body>
+		<h1>Formular - html5 - Input - Elemente</h1>
+		<form method="POST" action="https://jscourse.bitpacker.de/html2/catch.php">
+			<table class="bordered">
+				<tbody>
+					<tr>
+						<th>color</th>
+						<td>
+							<input type="color" name="color"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button type="submit" name="abschicken" value="buttonsend">Abschicken</button>
+		</form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Aufgabe 
+Nutzerinteraktion mit Formularen
+
+-->
+<html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
+    <head>
+		<title>Formulare Grundlagen</title>			<!-- Titel tag: erscheint im Kopfbereich des  Browsers-->
+		<meta charset="UTF-8">					<!-- meta tag: mt name="charset"steuert die Auswahl des Zeichensatzes-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/basics.css">
+    </head>
+    <body>
+		<h1>Formular - Standardelemente</h1>
+		<form method="POST" action="https://jscourse.bitpacker.de/html2/catch.php">
+			<h3>Button Feld</h3>
+			<input type="button" name="clickbox" value="Hier steht, was der Browser zeichnet"/>
+			<h3>Radiogroup</h3>
+			<input type="radio" name="auswahlgruppe" value="Nummer1"/>
+			<input type="radio" name="auswahlgruppe" value="Nummer2"/>
+			<h3>Checkbox Feld</h3>
+			<input type="checkbox" name="auswahlfeld"/>
+			<h3>Textzeilen Feld</h3>
+			<input type="text" name="vorname"/>
+			<h3>Submit Buttons</h3>
+			<input type="submit" name="abschicken" value="Senden"/>
+			<input type="submit" name="abschicken" value="Bestellen"/>
+		</form>
+    </body>
+</html>
