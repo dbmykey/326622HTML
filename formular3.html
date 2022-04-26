@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- Aufgabe 
 Nutzerinteraktion mit Formularen html5 Sondertypen für input-Felder
-
+color, date, datetime-local, email,
+month, number, password, range,
+reset, search, tel,
+time, url, week
 -->
 <html lang="de">								<!-- Attribut lang = Welche Sprache verwendet die Seite -->
     <head>
@@ -13,13 +16,26 @@ Nutzerinteraktion mit Formularen html5 Sondertypen für input-Felder
 		<style>
 			table.bordered {
 				width:100%;
-				marging-bottom:30px;
+				margin-bottom:30px;
 			}
 			table.bordered tr td,
 			table.bordered tr th {
 				padding:10px;
 				text-align:left;
 			}
+			table.bordered tr:nth-child(even) td,
+			table.bordered tr:nth-child(even) th{
+				background-color:#C9C9C9;
+			}
+			fieldset {
+				border:1px solid var(--table-border);
+				border-radius:4px;
+			}
+			input[required] {
+				border:1px solid #DE1671;
+				border-width:2px;
+			}
+			
 		</style>
     </head>
     <body>
@@ -33,10 +49,111 @@ Nutzerinteraktion mit Formularen html5 Sondertypen für input-Felder
 							<input type="color" name="color"/>
 						</td>
 					</tr>
+					<tr>
+						<th>date</th>
+						<td>
+							<input type="date" name="date"/>
+						</td>
+					</tr>
+					<tr>
+						<th>datetime-local</th>
+						<td>
+							<input type="datetime-local" name="datetime"/>
+						</td>
+					</tr>
+					<tr>
+						<th>time</th>
+						<td>
+							<input type="time" name="time"/>
+						</td>
+					</tr>
+					<tr>
+						<th>month</th>
+						<td>
+							<input type="month" name="month"/>
+						</td>
+					</tr>
+					<tr>
+						<th>week</th>
+						<td>
+							<input type="week" name="week"/>
+						</td>
+					</tr>
+					<tr>
+						<th>email</th>
+						<td>
+							<input type="email" name="email"/>
+						</td>
+					</tr>
+					<tr>
+						<th>password</th>
+						<td>
+							<input type="password" name="password" required>*
+						</td>
+					</tr>
+					<tr>
+						<th>search</th>
+						<td>
+							<input type="search" name="search"/>
+						</td>
+					</tr>
+					<tr>
+						<th>tel</th>
+						<td>
+							<input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{6}" placeholder="Bitte diesem Format 023-123456"/>
+						</td>
+					</tr>
+					<tr>
+						<th>url</th>
+						<td>
+							<input type="url" name="url"/>
+						</td>
+					</tr>
+					<tr>
+						<th>number</th>
+						<td>
+							<input type="number" name="number" min="10" max="200" step="5" value="50"/>
+						</td>
+					</tr>
+					<tr>
+						<th>range</th>
+						<td>
+							<input type="range" name="range" min="10" max="200" step="5" value="50"/>
+						</td>
+					</tr>
+					<tr>
+						<th>file</th>
+						<td>
+							<input type="file" name="file" multiple/>
+						</td>
+					</tr>
+					<tr>
+						<th>text</th>
+						<td>
+							<input type="text" name="text" pattern="[0-9]{1,3}"/>
+						</td>
+					</tr>
+					<tr>
+						<th>text readonly</th>
+						<td>
+							<input type="text" name="t2" value="test" readonly/>
+						</td>
+					</tr>
 				</tbody>
 			</table>
-
-			<button type="submit" name="abschicken" value="buttonsend">Abschicken</button>
+			<br>
+			<fieldset>
+				<legend>
+					Bedienelemente<br>
+					für Formular
+				</legend>
+				<button type="submit" name="abschicken" value="buttonsend">Abschicken</button>
+				<hr>
+				<input type="reset" value="zurücksetzen" disabled/>
+			</fieldset>
+			<br>
+			<br>
+			<br>
 		</form>
     </body>
 </html>
