@@ -88,7 +88,7 @@ time, url, week
 					<tr>
 						<th>password</th>
 						<td>
-							<input type="password" name="password" required>*
+							<input type="password" name="password" required value="123">*
 						</td>
 					</tr>
 					<tr>
@@ -100,7 +100,7 @@ time, url, week
 					<tr>
 						<th>tel</th>
 						<td>
-							<input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{6}" placeholder="Bitte diesem Format 023-123456"/>
+							<input type="tel" name="tel" maxlength="10" size="100" pattern="[0-9]{3}-[0-9]{6}" placeholder="Bitte diesem Format 023-123456"/>
 						</td>
 					</tr>
 					<tr>
@@ -124,13 +124,13 @@ time, url, week
 					<tr>
 						<th>file</th>
 						<td>
-							<input type="file" name="file" multiple/>
+							<input type="file" name="file[]" multiple/>
 						</td>
 					</tr>
 					<tr>
 						<th>text</th>
 						<td>
-							<input type="text" name="text" pattern="[0-9]{1,3}"/>
+							<input type="text" name="text" pattern="[0-9A-Za-z]{1,3}"/>1-3 Zeichen, Buchstaben A-Z oder Ziffern 0-9
 						</td>
 					</tr>
 					<tr>
@@ -144,7 +144,7 @@ time, url, week
 			<br>
 			<fieldset>
 				<legend>
-					Bedienelemente<br>
+					Bedienelemente
 					für Formular
 				</legend>
 				<button type="submit" name="abschicken" value="buttonsend">Abschicken</button>
